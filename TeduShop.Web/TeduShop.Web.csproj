@@ -204,14 +204,6 @@
       <Project>{5a74224e-80f7-44d3-ab37-473981d0b8a9}</Project>
       <Name>TeduShop.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TeduShop.Data\TeduShop.Data.csproj">
-      <Project>{cee91dc7-1618-4f21-b53d-96cedd035f22}</Project>
-      <Name>TeduShop.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TeduShop.Model\TeduShop.Model.csproj">
-      <Project>{1468595e-ba48-410e-b654-ff486c6225b7}</Project>
-      <Name>TeduShop.Model</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TeduShop.Service\TeduShop.Service.csproj">
       <Project>{6a14065d-1a58-4c93-9e65-f3e25d274e29}</Project>
       <Name>TeduShop.Service</Name>
