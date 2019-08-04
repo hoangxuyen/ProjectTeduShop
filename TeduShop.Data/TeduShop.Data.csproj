@@ -48,7 +48,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infrastracture\DbFactory.cs" />
+    <Compile Include="Infrastracture\Disposable.cs" />
+    <Compile Include="Infrastracture\IDbFactory.cs" />
+    <Compile Include="Infrastracture\RepositoryBase.cs" />
+    <Compile Include="Infrastracture\UnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Infrastracture\IRepository.cs" />
+    <Compile Include="Infrastracture\IUnitOfWork.cs" />
+    <Compile Include="TeduShopDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -59,6 +67,13 @@
       <Project>{5a74224e-80f7-44d3-ab37-473981d0b8a9}</Project>
       <Name>TeduShop.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TeduShop.Model\TeduShop.Model.csproj">
+      <Project>{fed69fb5-6842-4819-b3b8-160dd0988a2e}</Project>
+      <Name>TeduShop.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
