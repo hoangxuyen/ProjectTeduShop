@@ -49,11 +49,11 @@
       <Name>TeduShop.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\TeduShop.Data\TeduShop.Data.csproj">
-      <Project>{cee91dc7-1618-4f21-b53d-96cedd035f22}</Project>
+      <Project>{61e58af7-e673-44f0-a5bf-e12540ceee21}</Project>
       <Name>TeduShop.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\TeduShop.Model\TeduShop.Model.csproj">
-      <Project>{1468595e-ba48-410e-b654-ff486c6225b7}</Project>
+      <Project>{fed69fb5-6842-4819-b3b8-160dd0988a2e}</Project>
       <Name>TeduShop.Model</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TeduShop.Model.Abstract;
 
 namespace TeduShop.Model.Models
 {
     [Table("Posts")]
-    public class Post:Auditable
+    public class Post : Auditable
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -20,7 +15,7 @@ namespace TeduShop.Model.Models
         public string Name { set; get; }
         [Required]
         [MaxLength(256)]
-        [Column(TypeName ="varchar")]
+        [Column(TypeName = "varchar")]
         public string Alias { set; get; }
         [Required]
         public int CategoryID { set; get; }
@@ -34,6 +29,5 @@ namespace TeduShop.Model.Models
         public int? ViewCount { set; get; }
         [ForeignKey("CategoryID")]
         public virtual PostCategory PostCategory { set; get; }
-
     }
 }
