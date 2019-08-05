@@ -9,7 +9,7 @@ using TeduShop.Data.Repositories;
 
 namespace TeduShop.Data.Infrastracture
 {
-    public abstract class RepositoryBase<T> where T:class
+    public abstract class RepositoryBase<T>:IRepository<T> where T:class
     {
         #region Properties
         private TeduShopDbContext dataContext;
