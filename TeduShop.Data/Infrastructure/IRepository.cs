@@ -14,6 +14,7 @@ namespace TeduShop.Data.Infrastracture
 
         //Phương thức xóa
         void Delete(T entity);
+        void Delete(int id);
 
         //Phương thức xóa nhiều Dl cùng lúc
         void DeleteMulti(Expression<Func<T, bool>> where);
