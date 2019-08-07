@@ -155,6 +155,13 @@ namespace TeduShop.Data.Migrations
                         DisplayOrder = c.Int(),
                         Image = c.String(maxLength: 256),
                         HomeFlag = c.Boolean(),
+                        Status = c.Boolean(nullable: false),
+                        CreatedDate = c.DateTime(),
+                        CreatedBy = c.String(maxLength: 256),
+                        UpdatedDate = c.DateTime(),
+                        UpdatedBy = c.String(maxLength: 256),
+                        MetaKeyword = c.String(maxLength: 256),
+                        MetaDescription = c.String(maxLength: 256),
                     })
                 .PrimaryKey(t => t.ID);
             

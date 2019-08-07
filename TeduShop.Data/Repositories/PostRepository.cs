@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using TeduShop.Data.Infrastracture;
 using TeduShop.Model.Models;
-using System.Linq;
 
 namespace TeduShop.Data.Repositories
 {

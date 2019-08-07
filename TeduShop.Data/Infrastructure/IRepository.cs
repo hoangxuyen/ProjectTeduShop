@@ -7,14 +7,14 @@ namespace TeduShop.Data.Infrastracture
     public interface IRepository<T> where T : class
     {
         //Phương thức thêm
-        void Add(T entity);
+        T Add(T entity);
 
         //Phương thức sửa
         void Update(T entity);
 
         //Phương thức xóa
-        void Delete(T entity);
-        void Delete(int id);
+        T Delete(T entity);
+        T Delete(int id);
 
         //Phương thức xóa nhiều Dl cùng lúc
         void DeleteMulti(Expression<Func<T, bool>> where);
